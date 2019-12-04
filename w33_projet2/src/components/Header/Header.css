@@ -1,0 +1,17 @@
+header {
+    background-color: #f5c0a2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .canada_flag {
+    height: 85px;
+    width: 170px;
+    background-image: url(canadaflag.png);
+    background-size: 170px 85px;
+  }
+  
+  li{
+    font-weight: bold;
+    list-style-type: none;
+  }
