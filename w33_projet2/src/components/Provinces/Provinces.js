@@ -47,13 +47,16 @@ export default class Provinces extends Component {
                 />
                 <ul> {this.state.strFiltre} </ul>
                 <ul>
-                    {this.state.provinces.map(currProvince => {
-                        return (
-                            <div>
-                                <Province province={currProvince} />
-                            </div>
-                        );
-                    })}
+                    <select id="provinces">
+                        <option>Choisir votre province</option>
+                        {this.state.provinces.map(currProvince => {
+                            return (
+                                <div>
+                                    <option><Province province={currProvince}/></option>
+                                </div>
+                            );
+                        })}
+                    </select>
                     {!binProvincesFound && <li> No states found </li>}                    
                 </ul>
             </div>
