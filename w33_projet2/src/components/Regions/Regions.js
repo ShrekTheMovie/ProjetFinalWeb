@@ -38,24 +38,23 @@ export default class Provinces extends Component {
         
         return (
             <div>
-                <span>Provinces contenant les lettres:&nbsp;&nbsp;</span>
+                {/* <span>Provinces contenant les lettres:&nbsp;&nbsp;</span>
                 <input
                     id="filtreId"
                     type="text"
                     value={this.state.strFiltre}
                     onChange={this.handleChange}
                 />
-                <ul> {this.state.strFiltre} </ul>
+                <ul> {this.state.strFiltre} </ul> */}
                 <ul>
                     <select>
                         <option>Choisir votre région</option>
                         {this.state.regions.map(currRegion => {
                             return (
-                                <div>
-                                    <option><Region region={currRegion} /></option>
-                                </div>
+                                <Region region={currRegion} />
                             );
                         })}
+                        {this.state.regions}
                     </select>
                     {!binProvincesFound && <li> No states found </li>}                    
                 </ul>

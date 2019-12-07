@@ -15,3 +15,9 @@ header {
     font-weight: bold;
     list-style-type: none;
   }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }

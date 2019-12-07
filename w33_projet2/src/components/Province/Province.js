@@ -4,9 +4,9 @@ export default class Province extends Component {
     render() {
         const province = this.props.province;
         return (
-            <li key={province}>
+            <option key={province} id='option'>
                 {province}
-            </li>
+            </option>
         )
     }
 }

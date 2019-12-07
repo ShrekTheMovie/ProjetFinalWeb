@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import Provinces from './components/Provinces/Provinces'
 import Footer from './components/Footer/Footer'
 import Regions from './components/Regions/Regions'
+import Page from './components/Page/Page'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
@@ -11,10 +12,13 @@ function App() {
     <div className="App">
     <Router>
         <Header />
-        <Switch>
-          <Route path='Provinces' component={Provinces}/>
-          <Route path='Regions' component={Regions}/>
-        </Switch>
+        <div className='App-Elements'>
+          <Switch>
+            <Route path='/Provinces' component={Provinces}/>
+            <Route path='/Regions' component={Regions}/>
+            <Route path='/Page' component={Page} />
+          </Switch>
+        </div>
         <Footer />
     </Router>
     </div>

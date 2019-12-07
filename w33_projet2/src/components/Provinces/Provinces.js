@@ -38,22 +38,20 @@ export default class Provinces extends Component {
         
         return (
             <div>
-                <span>Provinces contenant les lettres:&nbsp;&nbsp;</span>
+                {/* <span>Provinces contenant les lettres:&nbsp;&nbsp;</span>
                 <input
                     id="filtreId"
                     type="text"
                     value={this.state.strFiltre}
                     onChange={this.handleChange}
                 />
-                <ul> {this.state.strFiltre} </ul>
+                <ul> {this.state.strFiltre} </ul> */}
                 <ul>
                     <select id="provinces">
                         <option>Choisir votre province</option>
                         {this.state.provinces.map(currProvince => {
                             return (
-                                <div>
-                                    <option><Province province={currProvince}/></option>
-                                </div>
+                                <Province province={currProvince} />
                             );
                         })}
                     </select>
