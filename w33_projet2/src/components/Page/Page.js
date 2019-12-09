@@ -62,7 +62,7 @@ export default class Page extends Component {
                 <ul> {this.state.strFiltre} </ul> */}
                 <ul>
                     <select id='ddlRegions' onChange={this.componentDidMountProvinces}>
-                        <option>Choisir votre région</option>
+                        <option value="rien">Choisir votre région</option>
                         {this.state.regions.map(currRegion => {
                             return (
                                 <Region region={currRegion} />

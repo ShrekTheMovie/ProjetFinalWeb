@@ -4,7 +4,8 @@
         "Centre": ["Ontario", "Québec"],
         "Prairies":["Manitoba", "Saskatchewan", "Alberta"], 
         "Cote-Ouest":["Colombie-Britannique"], 
-        "Territoires du Nord":["Nunavut", "Territoires du Nord-Ouest", "Yukon"]
+        "Territoires du Nord":["Nunavut", "Territoires du Nord-Ouest", "Yukon"],
+        "rien":[]
     }
 
 }
