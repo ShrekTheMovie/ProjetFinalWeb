@@ -4,7 +4,7 @@ export default class Region extends Component {
     render() {
         const region = this.props.region;
         return (
-            <option key={region} id='option'>{region}</option>
+            <option key={region} id='option' value={region}>{region}</option>
         )
     }
 }

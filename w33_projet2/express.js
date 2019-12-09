@@ -5,6 +5,7 @@ const cors = require('cors')
 const path = require('path')
 const objProvincesJsonData = require('./prov.json')
 const objRegionsJsonData = require('./regions.json')
+const objRegionsProvincesJsonData = require('./regions_provinces.json')
 const app = express();
 
 //Utilisation de cors pour le cross-origin resource sharing
@@ -33,6 +34,12 @@ app.get('/regions', (req, res)=>{
 //Accéder à cette url à partir de http://localhost:3050/provinces
 app.get('/provinces', (req, res)=>{
     res.json(objProvincesJsonData)
+})
+
+//Accéder à cet url à partir de http://localhost:3050/regions_provinces/Centre
+app.get('/regions_provinces/:province', (req, res) =>{
+    console.log(req.params.province)
+    res.json(objRegionsProvincesJsonData.regions[req.params.province])
 })
 
 const server = app.listen(portno, ()=> {

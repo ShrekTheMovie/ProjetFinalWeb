@@ -17,9 +17,9 @@ export default class Header extends Component {
                     </div>
                 </div>
                 <div class='row links'>
-                    <Link to={'Regions'}>Recherche par Régions</Link>
-                    <Link to={'Provinces'}>Recherche par Provinces</Link>
-                    <Link to={'Page'}>Recherche par régions et provinces(indépendant)</Link>
+                    <Link to={'Regions'}>[Recherche par Régions]</Link>
+                    <Link to={'Provinces'}>[Recherche par Provinces]</Link>
+                    <Link to={'Page'}>[Recherche par régions et provinces(indépendant)]</Link>
                 </div>
             </header>
         )

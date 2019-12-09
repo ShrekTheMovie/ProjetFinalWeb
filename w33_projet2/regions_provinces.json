@@ -1,0 +1,10 @@
+{
+    "regions":{
+        "Atlantique":  ["Terre-Neuve-et-Labrador", "Ile-du-Prince-Édouard", "Nouvelle-Écosse", "Nouveau-Brunswick"],
+        "Centre": ["Ontario", "Québec"],
+        "Prairies":["Manitoba", "Saskatchewan", "Alberta"], 
+        "Cote-Ouest":["Colombie-Britannique"], 
+        "Territoires du Nord":["Nunavut", "Territoires du Nord-Ouest", "Yukon"]
+    }
+
+}
